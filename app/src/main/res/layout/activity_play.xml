@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PlayActivity">
+
+    <TextView
+        android:id="@+id/tv_remainig_time"
+        android:textStyle="bold"
+        android:textColor="@color/redPink"
+        android:layout_margin="16dp"
+        android:text="Time: 30s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/img_avatar"
+        app:civ_border_color="@color/red"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toStartOf="@id/tv_score"
+        app:layout_constraintStart_toEndOf="@id/tv_remainig_time"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:textStyle="bold"
+        android:textColor="@color/redPink"
+        android:layout_margin="16dp"
+        android:text="Time: 30s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:background="@drawable/play_backgound">
+
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/actor"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:text="Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+
+
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_qu"
+            android:layout_marginTop="16dp"
+
+            android:fontFamily="@font/actor"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/yellow"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioGroup
+            android:id="@+id/quiz_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <RadioButton
+                android:layout_margin="2dp"
+                android:id="@+id/option1"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/magenda"
+                android:textSize="16sp"
+                android:background="@drawable/mcq_backgound"/>
+
+            <RadioButton
+                android:layout_margin="2dp"
+                android:id="@+id/option2"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/magenda"
+                android:textSize="16sp"
+                android:background="@drawable/mcq_backgound"/>
+
+
+            <RadioButton
+                android:layout_margin="2dp"
+                android:id="@+id/option3"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/magenda"
+                android:textSize="16sp"
+                android:background="@drawable/mcq_backgound"/>
+
+            <RadioButton
+                android:layout_margin="2dp"
+                android:id="@+id/option4"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/magenda"
+                android:textSize="16sp"
+                android:background="@drawable/mcq_backgound"/>
+
+
+
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

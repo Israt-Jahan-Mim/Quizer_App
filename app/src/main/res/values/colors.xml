@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">@color/redPink</color>
+    <color name="purple_500">@color/red</color>
+    <color name="purple_700">@color/magenda</color>
+    <color name="teal_200">@color/teal</color>
+    <color name="teal_700">@color/teal</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="magenda">#8d1832</color>
+    <color name="red">#ec1c3c</color>
+    <color name="redPink">#d03117</color>
+    <color name="teal">#00aacf</color>
+    <color name="yellow">#fec60d</color>
+    <color name="pink">#b12179</color>
+    <color name="grey">#cccccc</color>
+
+
+</resources>
